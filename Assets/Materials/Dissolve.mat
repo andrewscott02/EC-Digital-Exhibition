@@ -12,7 +12,7 @@ Material:
     type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
-  m_LightmapFlags: 2
+  m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -35,13 +35,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Dissolve: 1
+    - _Dissolve: 0
     - _QueueControl: 0
     - _QueueOffset: 0
     - _UseTime: 1
     m_Colors:
-    - _BaseColor: {r: 0.631675, g: 0.6842535, b: 0.8018868, a: 1}
-    - _GapColor: {r: 0, g: 18.445732, b: 59.714134, a: 1}
+    - _BaseColor: {r: 0.6823603, g: 0.7099398, b: 0.7735849, a: 1}
+    - _GapColor: {r: 0, g: 13.69129, b: 44.72706, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &5890693942330302933
 MonoBehaviour:
