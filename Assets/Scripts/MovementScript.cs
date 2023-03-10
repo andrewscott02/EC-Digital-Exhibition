@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class MovementScript : MonoBehaviour
 {
-    Rigidbody rb;
+    CharacterController controller;
     public GameObject capsule;
     public bool visibleOnStart = true;
 
-    public float speed;
+    public float speed = 0.01f;
+    public float gravity = 0.015f;
 
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        controller = GetComponent<CharacterController>();
 
         if (capsule != null)
             capsule.SetActive(visibleOnStart);
@@ -26,7 +27,6 @@ public class MovementScript : MonoBehaviour
 
         if (Input.GetKey(KeyCode.W))
         {
-            //Move forwards
             moveVector += transform.forward;
         }
 
@@ -45,6 +45,10 @@ public class MovementScript : MonoBehaviour
             moveVector -= transform.right;
         }
 
-        rb.AddForce(moveVector * speed, ForceMode.Force);
+        moveVector.Normalize();
+        moveVector *= speed;
+        moveVector.y -= gravity;
+
+        controller.Move(moveVector);
     }
 }
