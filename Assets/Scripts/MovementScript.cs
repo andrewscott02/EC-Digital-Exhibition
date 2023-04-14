@@ -53,6 +53,11 @@ public class MovementScript : MonoBehaviour
         moveVector *= speed;
         moveVector.y -= gravity;
 
+        MovePlayer(moveVector);
+    }
+
+    public void MovePlayer(Vector3 moveVector)
+    {
         controller.Move(moveVector);
     }
 

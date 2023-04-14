@@ -85,6 +85,10 @@ namespace Necropanda
                     {
                         case E_UtilityScripts.Position:
                             transform.position += newVector;
+                            if (moveScript != null)
+                            {
+                                moveScript.MovePlayer(newVector);
+                            }
                             break;
                         case E_UtilityScripts.Rotation:
                             Quaternion newQuaternion = Quaternion.Euler(transform.rotation.eulerAngles + newVector);
@@ -97,6 +101,46 @@ namespace Necropanda
 
                     utilityModules[i].currentTime += Time.deltaTime;
                 }
+            }
+        }
+
+        MovementScript moveScript;
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.gameObject.CompareTag("Player") == false)
+            {
+                Debug.Log("Collided with " + other.gameObject.name);
+                return;
+            }
+
+            //collided with player
+            Debug.Log("Collided with player");
+            MovementScript moveScript = other.GetComponent<MovementScript>();
+
+            if (moveScript != null)
+            {
+                Debug.Log("Calling function");
+                this.moveScript = moveScript;
+            }
+        }
+
+        private void OnTriggerExit(Collider other)
+        {
+            if (other.gameObject.CompareTag("Player") == false)
+            {
+                Debug.Log("Collided with " + other.gameObject.name);
+                return;
+            }
+
+            //collided with player
+            Debug.Log("Collided with player");
+            MovementScript moveScript = other.GetComponent<MovementScript>();
+
+            if (moveScript != null)
+            {
+                Debug.Log("Calling function");
+                this.moveScript = null;
             }
         }
     }
