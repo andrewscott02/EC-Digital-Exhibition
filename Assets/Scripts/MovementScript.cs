@@ -11,6 +11,8 @@ public class MovementScript : MonoBehaviour
     public float speed = 0.01f;
     public float gravity = 0.015f;
 
+    Vector3 startPos;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +20,8 @@ public class MovementScript : MonoBehaviour
 
         if (capsule != null)
             capsule.SetActive(visibleOnStart);
+
+        startPos = transform.position;
     }
 
     // Update is called once per frame
@@ -50,5 +54,15 @@ public class MovementScript : MonoBehaviour
         moveVector.y -= gravity;
 
         controller.Move(moveVector);
+    }
+
+    public void ResetPos()
+    {
+        Debug.Log("Resetting pos from " + transform.position + " to " + startPos);
+        controller.enabled = false;
+        transform.position = startPos;
+        controller.enabled = true;
+
+        Debug.Log("Reset to " + transform.position);
     }
 }
