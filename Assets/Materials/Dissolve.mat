@@ -36,12 +36,13 @@ Material:
     m_Ints: []
     m_Floats:
     - _Dissolve: 0
+    - _DissolveTime: 1
     - _QueueControl: 0
     - _QueueOffset: 0
     - _UseTime: 1
     m_Colors:
     - _BaseColor: {r: 0.7445265, g: 0.89544225, b: 0.9339623, a: 1}
-    - _DisolveMinMax: {r: 0.4, g: 0.8, b: 0, a: 0}
+    - _DisolveMinMax: {r: 0.4, g: 1, b: 0, a: 0}
     - _GapColor: {r: 5.8162074, g: 0, b: 44.72706, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &5890693942330302933
