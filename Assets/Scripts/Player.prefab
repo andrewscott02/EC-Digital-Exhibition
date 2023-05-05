@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbacb45c4b23ccd4db73425f33c95440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 1000
+  joystickSensitivity: 0.3
   playerBody: {fileID: 4725155161430471029}
 --- !u!1 &4725155161430471024
 GameObject:
@@ -197,8 +197,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   capsule: {fileID: 4725155162466818977}
   visibleOnStart: 1
-  speed: 0.01
-  gravity: 0.015
+  speed: 0.0075
+  gravity: 0.05
 --- !u!143 &8246463557523042137
 CharacterController:
   m_ObjectHideFlags: 0

@@ -1,13 +1,36 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class MouseLook : MonoBehaviour
 {
-    public float mouseSensitivity = 100f;
+    InputManager controls;
+    InputAction look;
+
+    public float joystickSensitivity = 2f;
     public Transform playerBody;
 
     float xRot = 0f;
+
+    private void Awake()
+    {
+        controls = new InputManager();
+    }
+
+    private void OnEnable()
+    {
+        look = controls.Player.Look;
+        look.Enable();
+
+        controls.Player.Look.performed += ctx => Look(ctx.ReadValue<Vector2>() * joystickSensitivity);
+        controls.Player.Look.Enable();
+    }
+
+    private void OnDisable()
+    {
+        controls.Disable();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -16,17 +39,24 @@ public class MouseLook : MonoBehaviour
         Cursor.visible = false;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+    Vector2 direction;
 
-        xRot -= mouseY;
+    // Update is called once per frame
+    void Look(Vector2 direction)
+    {
+        this.direction = direction;
+    }
+
+    private void Update()
+    {
+        if (!controls.Player.Look.IsPressed())
+            direction = Vector3.zero;
+
+        xRot -= direction.y;
         xRot = Mathf.Clamp(xRot, -90f, 90f);
 
         transform.localRotation = Quaternion.Euler(xRot, 0f, 0f);
 
-        playerBody.Rotate(Vector3.up * mouseX);
+        playerBody.Rotate(Vector3.up * direction.x);
     }
 }

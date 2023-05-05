@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class MovementScript : MonoBehaviour
 {
+    InputManager controls;
+    InputAction move;
+
     CharacterController controller;
     public GameObject capsule;
     public bool visibleOnStart = true;
@@ -12,6 +16,20 @@ public class MovementScript : MonoBehaviour
     public float gravity = 0.015f;
 
     Vector3 startPos;
+
+    private void Awake()
+    {
+        controls = new InputManager();
+    }
+
+    private void OnEnable()
+    {
+        move = controls.Player.Move;
+        move.Enable();
+
+        controls.Player.Move.performed += ctx => Move(ctx.ReadValue<Vector2>());
+        controls.Player.Move.Enable();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -24,34 +42,26 @@ public class MovementScript : MonoBehaviour
         startPos = transform.position;
     }
 
+    Vector3 moveVector;
+
     // Update is called once per frame
-    void Update()
+    void Move(Vector2 move)
     {
-        Vector3 moveVector = new Vector3(0, 0, 0);
+        Debug.Log("Moving");
+        moveVector = Vector3.zero;
+        moveVector += Camera.main.transform.forward * move.y;
+        moveVector += Camera.main.transform.right * move.x;
 
-        if (Input.GetKey(KeyCode.W))
-        {
-            moveVector += transform.forward;
-        }
-
-        if (Input.GetKey(KeyCode.S))
-        {
-            moveVector -= transform.forward;
-        }
-
-        if (Input.GetKey(KeyCode.D))
-        {
-            moveVector += transform.right;
-        }
-
-        if (Input.GetKey(KeyCode.A))
-        {
-            moveVector -= transform.right;
-        }
-
-        moveVector.Normalize();
+        //moveVector.Normalize();
         moveVector *= speed;
-        moveVector.y -= gravity;
+    }
+
+    private void Update()
+    {
+        if (!controls.Player.Move.IsPressed())
+            moveVector = Vector3.zero;
+
+        moveVector.y = -gravity;
 
         MovePlayer(moveVector);
     }
