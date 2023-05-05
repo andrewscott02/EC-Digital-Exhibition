@@ -47,7 +47,7 @@ public class MouseLook : MonoBehaviour
         this.direction = direction;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (!controls.Player.Look.IsPressed())
             direction = Vector3.zero;

@@ -56,7 +56,7 @@ public class MovementScript : MonoBehaviour
         moveVector *= speed;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (!controls.Player.Move.IsPressed())
             moveVector = Vector3.zero;
