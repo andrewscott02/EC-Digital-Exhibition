@@ -29,10 +29,10 @@ MonoBehaviour:
   active: 1
   threshold:
     m_OverrideState: 1
-    m_Value: 2
+    m_Value: 2.3
   intensity:
     m_OverrideState: 1
-    m_Value: 10.69
+    m_Value: 13.07
   scatter:
     m_OverrideState: 0
     m_Value: 0.873
