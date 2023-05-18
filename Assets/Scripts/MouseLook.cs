@@ -7,6 +7,7 @@ public class MouseLook : MonoBehaviour
 {
     InputManager controls;
     InputAction look;
+    InputAction interact;
 
     public float joystickSensitivity = 2f;
     public Transform playerBody;
@@ -25,6 +26,12 @@ public class MouseLook : MonoBehaviour
 
         controls.Player.Look.performed += ctx => Look(ctx.ReadValue<Vector2>() * joystickSensitivity);
         controls.Player.Look.Enable();
+
+        interact = controls.Player.Interact;
+        interact.Enable();
+
+        controls.Player.Interact.performed += ctx => Interact();
+        controls.Player.Interact.Enable();
     }
 
     private void OnDisable()
@@ -58,5 +65,41 @@ public class MouseLook : MonoBehaviour
         transform.localRotation = Quaternion.Euler(xRot, 0f, 0f);
 
         playerBody.Rotate(Vector3.up * direction.x);
+    }
+
+    ScreenPrintInfo info = null;
+    public LayerMask layerMask;
+
+    private void Update()
+    {
+        info = null;
+        Vector3 dir = transform.forward;
+
+        RaycastHit hit;
+
+        if (Physics.Raycast(transform.position, dir, out hit, 50f, layerMask))
+        {
+            if (hit.collider == null)
+            {
+                Debug.Log("No collider");
+                return;
+            }
+
+            info = hit.collider.gameObject.GetComponent<ScreenPrintInfo>();
+            Debug.Log(info.name);
+        }
+    }
+
+    void Interact()
+    {
+        Debug.Log("Interact");
+        if (info != null)
+            info.Interact();
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawLine(transform.position, transform.position + (transform.forward * 50f));
     }
 }
