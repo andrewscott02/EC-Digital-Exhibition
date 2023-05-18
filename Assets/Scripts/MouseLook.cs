@@ -73,6 +73,8 @@ public class MouseLook : MonoBehaviour
     private void Update()
     {
         info = null;
+        CanvasInfo.Instance.interactPopup.SetActive(false);
+
         Vector3 dir = transform.forward;
 
         RaycastHit hit;
@@ -88,6 +90,8 @@ public class MouseLook : MonoBehaviour
             info = hit.collider.gameObject.GetComponent<ScreenPrintInfo>();
             Debug.Log(info.name);
         }
+
+        CanvasInfo.Instance.interactPopup.SetActive(info != null);
     }
 
     void Interact()

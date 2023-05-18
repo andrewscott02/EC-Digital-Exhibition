@@ -402,6 +402,82 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 115145526}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &122779289
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 122779290}
+  - component: {fileID: 122779292}
+  - component: {fileID: 122779291}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &122779290
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122779289}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1285069687}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 182.58, y: -0.00014985}
+  m_SizeDelta: {x: 71.961, y: 52.387}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &122779291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122779289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 98beaec3715fa5a4da9cd069e958fe71, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &122779292
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122779289}
+  m_CullTransparentMesh: 1
 --- !u!1 &149303251
 GameObject:
   m_ObjectHideFlags: 0
@@ -5789,11 +5865,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d79ab395264d7dd4ab9ff2eaf5026b58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: 
-  Artist: 
-  Dimensions: 
-  Year: 
-  Medium: 
+  Title: Friday For Future With Simon
+  Artist: (Emily) Ho Ying Chan
+  Dimensions: 42 X 59.4 cm
+  Year: 2022-2023
+  Medium: Screen Print And Mix Media With Mirror Card Paper
   QRCode: {fileID: 0}
   Interview: {fileID: 0}
 --- !u!65 &336465571
@@ -10819,12 +10895,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d79ab395264d7dd4ab9ff2eaf5026b58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: 
-  Artist: 
-  Dimensions: 
-  Year: 
-  Medium: 
-  QRCode: {fileID: 0}
+  Title: "Max Penhallurick & His First Comics Book\u2019s"
+  Artist: (Emily) Ho Ying Chan
+  Dimensions: 42 X 59.4 cm
+  Year: 2022-2023
+  Medium: Screen Print And Mix Media With Mirror Card Paper
+  QRCode: {fileID: 21300000, guid: 7a8849462442b814c9b26e26b93f7796, type: 3}
   Interview: {fileID: 0}
 --- !u!65 &391064189
 BoxCollider:
@@ -10914,11 +10990,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d79ab395264d7dd4ab9ff2eaf5026b58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: 
-  Artist: 
-  Dimensions: 
-  Year: 
-  Medium: 
+  Title: Sara Kompa & Her Healing Teddy Bear
+  Artist: (Emily) Ho Ying Chan
+  Dimensions: 42 X 59.4 cm
+  Year: 2022-2023
+  Medium: Screen Print And Mix Media With Mirror Card Paper
   QRCode: {fileID: 0}
   Interview: {fileID: 0}
 --- !u!65 &411630685
@@ -11451,11 +11527,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d79ab395264d7dd4ab9ff2eaf5026b58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: 
-  Artist: 
-  Dimensions: 
-  Year: 
-  Medium: 
+  Title: am Churchill-Guntrip & Their Childhood Stationery Collection
+  Artist: (Emily) Ho Ying Chan
+  Dimensions: 42 X 59.4 cm
+  Year: 2022-2023
+  Medium: Screen Print And Mix Media With Mirror Card Paper
   QRCode: {fileID: 0}
   Interview: {fileID: 0}
 --- !u!65 &518575278
@@ -11696,6 +11772,141 @@ Transform:
   m_Father: {fileID: 1974919519}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &546340541
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 546340542}
+  - component: {fileID: 546340544}
+  - component: {fileID: 546340543}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &546340542
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546340541}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1285069687}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &546340543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546340541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Interact for more info
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 26.8
+  m_fontSizeBase: 26.8
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &546340544
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546340541}
+  m_CullTransparentMesh: 1
 --- !u!1 &555790241
 GameObject:
   m_ObjectHideFlags: 0
@@ -17167,11 +17378,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d79ab395264d7dd4ab9ff2eaf5026b58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: 
-  Artist: 
-  Dimensions: 
-  Year: 
-  Medium: 
+  Title: Marija Banaityte & Their Summer Camp Memories
+  Artist: (Emily) Ho Ying Chan
+  Dimensions: 42 X 59.4 cm
+  Year: 2022-2023
+  Medium: Screen Print And Mix Media With Mirror Card Paper
   QRCode: {fileID: 0}
   Interview: {fileID: 0}
 --- !u!65 &694992262
@@ -17361,12 +17572,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d79ab395264d7dd4ab9ff2eaf5026b58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: The Butterflies in Me
-  Artist: 
-  Dimensions: 
-  Year: 
-  Medium: 
-  QRCode: {fileID: 0}
+  Title: The Butterflies In Me
+  Artist: (Emily) Ho Ying Chan
+  Dimensions: 42 X 59.4 cm
+  Year: 2022-2023
+  Medium: Screen Print And Mix Media With Mirror Card Paper
+  QRCode: {fileID: 21300000, guid: 6a874f71b4a1c3149bc9eb498d4559d3, type: 3}
   Interview: {fileID: 0}
 --- !u!65 &724944588
 BoxCollider:
@@ -18191,11 +18402,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d79ab395264d7dd4ab9ff2eaf5026b58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: 
-  Artist: 
-  Dimensions: 
-  Year: 
-  Medium: 
+  Title: Liv Pattimore & Her Birthday Bracelet
+  Artist: (Emily) Ho Ying Chan
+  Dimensions: 42 X 59.4 cm
+  Year: 2022-2023
+  Medium: Screen Print And Mix Media With Mirror Card Paper
   QRCode: {fileID: 0}
   Interview: {fileID: 0}
 --- !u!65 &810516752
@@ -18357,11 +18568,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d79ab395264d7dd4ab9ff2eaf5026b58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: 
-  Artist: 
-  Dimensions: 
-  Year: 
-  Medium: 
+  Title: Dan Warren & His Classic Guitar
+  Artist: (Emily) Ho Ying Chan
+  Dimensions: 42 X 59.4 cm
+  Year: 2022-2023
+  Medium: Screen Print And Mix Media With Mirror Card Paper
   QRCode: {fileID: 0}
   Interview: {fileID: 0}
 --- !u!65 &860685378
@@ -23537,6 +23748,7 @@ GameObject:
   - component: {fileID: 908702922}
   - component: {fileID: 908702921}
   - component: {fileID: 908702920}
+  - component: {fileID: 908702924}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -23617,14 +23829,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1659058510}
-  - {fileID: 1364040039}
-  - {fileID: 966411485}
-  - {fileID: 1537589615}
-  - {fileID: 929075110}
-  - {fileID: 1276413293}
-  - {fileID: 1233484566}
-  - {fileID: 1914945879}
+  - {fileID: 1285069687}
+  - {fileID: 1695796692}
   m_Father: {fileID: 0}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -23633,6 +23839,27 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &908702924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908702919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dcfe3e3fa46d8a44ab314531d6f7c11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactPopup: {fileID: 1285069684}
+  infoCanvas: {fileID: 1695796691}
+  title: {fileID: 1537589616}
+  artist: {fileID: 929075111}
+  medium: {fileID: 1914945880}
+  date: {fileID: 1233484567}
+  dimensions: {fileID: 1276413294}
+  image: {fileID: 966411486}
+  qr: {fileID: 1364040040}
 --- !u!1 &924505538
 GameObject:
   m_ObjectHideFlags: 0
@@ -23743,7 +23970,7 @@ GameObject:
   - component: {fileID: 929075112}
   - component: {fileID: 929075111}
   m_Layer: 5
-  m_Name: Title (1)
+  m_Name: Artist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23756,18 +23983,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 929075109}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 908702923}
+  m_Father: {fileID: 1695796692}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -322, y: -130}
-  m_SizeDelta: {x: -700, y: -425.8613}
+  m_SizeDelta: {x: 392, y: 94.1387}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &929075111
 MonoBehaviour:
@@ -23816,12 +24043,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30.3
-  m_fontSizeBase: 30.3
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
-  m_fontSizeMax: 0
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
@@ -23988,18 +24215,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 966411484}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2.9358, y: 2.9358, z: 2.9358}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 908702923}
+  m_Father: {fileID: 1695796692}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -194, y: 38}
-  m_SizeDelta: {x: -901.6295, y: -427.6013}
+  m_SizeDelta: {x: 190.37048, y: 92.39871}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &966411486
 MonoBehaviour:
@@ -30210,12 +30437,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d79ab395264d7dd4ab9ff2eaf5026b58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: 
-  Artist: 
-  Dimensions: 
-  Year: 
-  Medium: 
-  QRCode: {fileID: 0}
+  Title: "Felix Attlee & Their Toy\u2019s Baby"
+  Artist: (Emily) Ho Ying Chan
+  Dimensions: 42 X 59.4 cm
+  Year: 2022-2023
+  Medium: Screen Print And Mix Media With Mirror Card Paper
+  QRCode: {fileID: 21300000, guid: 11d962cb1e8f7ef489f0ca85ae849fc1, type: 3}
   Interview: {fileID: 0}
 --- !u!65 &1164111625
 BoxCollider:
@@ -30436,7 +30663,7 @@ GameObject:
   - component: {fileID: 1233484568}
   - component: {fileID: 1233484567}
   m_Layer: 5
-  m_Name: Title (3)
+  m_Name: Date
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30449,18 +30676,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1233484565}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 908702923}
+  m_Father: {fileID: 1695796692}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -322, y: -201}
-  m_SizeDelta: {x: -700, y: -425.8613}
+  m_AnchoredPosition: {x: 419.1309, y: -130}
+  m_SizeDelta: {x: 216.3382, y: 94.1387}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1233484567
 MonoBehaviour:
@@ -30509,12 +30736,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30.3
-  m_fontSizeBase: 30.3
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
-  m_fontSizeMax: 0
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
@@ -30801,7 +31028,7 @@ GameObject:
   - component: {fileID: 1276413295}
   - component: {fileID: 1276413294}
   m_Layer: 5
-  m_Name: Title (2)
+  m_Name: Dimensions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30814,18 +31041,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1276413292}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 908702923}
+  m_Father: {fileID: 1695796692}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 92, y: -132}
-  m_SizeDelta: {x: -700, y: -425.8613}
+  m_SizeDelta: {x: 392, y: 94.1387}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1276413294
 MonoBehaviour:
@@ -30847,7 +31074,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Dimensions: Dimension text'
+  m_text: 'Dimensions: 42 X 59.4 cm'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -30874,12 +31101,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30.3
-  m_fontSizeBase: 30.3
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
-  m_fontSizeMax: 0
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -30924,6 +31151,84 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1276413292}
   m_CullTransparentMesh: 1
+--- !u!1 &1285069684
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1285069687}
+  - component: {fileID: 1285069686}
+  - component: {fileID: 1285069685}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1285069685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285069684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.5803922}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1285069686
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285069684}
+  m_CullTransparentMesh: 1
+--- !u!224 &1285069687
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285069684}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 546340542}
+  - {fileID: 122779290}
+  m_Father: {fileID: 908702923}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -215.47868}
+  m_SizeDelta: {x: -798.8016, y: -467.6127}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1303438657
 GameObject:
   m_ObjectHideFlags: 0
@@ -31483,18 +31788,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1364040038}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2.9358, y: 2.9358, z: 2.9358}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 908702923}
+  m_Father: {fileID: 1695796692}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 327, y: 90}
-  m_SizeDelta: {x: -992, y: -420}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1364040040
 MonoBehaviour:
@@ -31654,12 +31959,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d79ab395264d7dd4ab9ff2eaf5026b58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: 
-  Artist: 
-  Dimensions: 
-  Year: 
-  Medium: 
-  QRCode: {fileID: 0}
+  Title: Philip Phrano With His Favourite Book & Travel GoPo Camera
+  Artist: (Emily) Ho Ying Chan
+  Dimensions: 42 X 59.4 cm
+  Year: 2022-2023
+  Medium: Screen Print And Mix Media With Mirror Card Paper
+  QRCode: {fileID: 21300000, guid: f656ca3d7f447944fb304eba93dd610c, type: 3}
   Interview: {fileID: 0}
 --- !u!65 &1383321499
 BoxCollider:
@@ -32324,12 +32629,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d79ab395264d7dd4ab9ff2eaf5026b58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: 
-  Artist: 
-  Dimensions: 
-  Year: 
-  Medium: 
-  QRCode: {fileID: 0}
+  Title: "Anna Harris & Her Chicken Door Stock\u2019s Gerald"
+  Artist: (Emily) Ho Ying Chan
+  Dimensions: 42 X 59.4 cm
+  Year: 2022-2023
+  Medium: Screen Print And Mix Media With Mirror Card Paper
+  QRCode: {fileID: 21300000, guid: 3108ce485d328804e81a81f31dd8c297, type: 3}
   Interview: {fileID: 0}
 --- !u!65 &1481715767
 BoxCollider:
@@ -32486,18 +32791,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1537589614}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 908702923}
+  m_Father: {fileID: 1695796692}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -190.88306, y: 215.56812}
-  m_SizeDelta: {x: -457.0061, y: -445.6975}
+  m_AnchoredPosition: {x: -184.44092, y: 215.56812}
+  m_SizeDelta: {x: 678.332, y: 74.3025}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1537589616
 MonoBehaviour:
@@ -32546,12 +32851,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40.3
+  m_fontSize: 40
   m_fontSizeBase: 40.3
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 0
-  m_fontSizeMax: 0
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -33306,18 +33611,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1659058509}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 908702923}
+  m_Father: {fileID: 1695796692}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -0.000061035156, y: 0}
+  m_SizeDelta: {x: 1092, y: 520}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1659058511
 MonoBehaviour:
@@ -33618,6 +33923,50 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1679659640}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1695796691
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1695796692}
+  m_Layer: 5
+  m_Name: Info
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1695796692
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695796691}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1659058510}
+  - {fileID: 1364040039}
+  - {fileID: 966411485}
+  - {fileID: 1537589615}
+  - {fileID: 929075110}
+  - {fileID: 1276413293}
+  - {fileID: 1233484566}
+  - {fileID: 1914945879}
+  m_Father: {fileID: 908702923}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -1092, y: -520}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1706412113
 GameObject:
   m_ObjectHideFlags: 0
@@ -38832,12 +39181,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d79ab395264d7dd4ab9ff2eaf5026b58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: 
-  Artist: 
-  Dimensions: 
-  Year: 
-  Medium: 
-  QRCode: {fileID: 0}
+  Title: Izzy Eastick & Her Grandma's Gold Knots Pattern Ring
+  Artist: (Emily) Ho Ying Chan
+  Dimensions: 42 X 59.4 cm
+  Year: 2022-2023
+  Medium: Screen Print And Mix Media With Mirror Card Paper
+  QRCode: {fileID: 21300000, guid: 8448bfc7017f5264dae183466495b059, type: 3}
   Interview: {fileID: 0}
 --- !u!65 &1774888520
 BoxCollider:
@@ -39764,7 +40113,7 @@ GameObject:
   - component: {fileID: 1914945881}
   - component: {fileID: 1914945880}
   m_Layer: 5
-  m_Name: Title (4)
+  m_Name: Medium
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39777,18 +40126,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1914945878}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 908702923}
+  m_Father: {fileID: 1695796692}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 131, y: -200}
-  m_SizeDelta: {x: -700, y: -425.8613}
+  m_AnchoredPosition: {x: 4.645, y: -200}
+  m_SizeDelta: {x: 1045.3, y: 94.1387}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1914945880
 MonoBehaviour:
@@ -39837,12 +40186,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30.3
-  m_fontSizeBase: 30.3
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
-  m_fontSizeMax: 0
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -40342,12 +40691,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d79ab395264d7dd4ab9ff2eaf5026b58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: 
-  Artist: 
-  Dimensions: 
-  Year: 
-  Medium: 
-  QRCode: {fileID: 0}
+  Title: Yay-an Davies & His First DIY Toy
+  Artist: (Emily) Ho Ying Chan
+  Dimensions: 42 X 59.4 cm
+  Year: 2022-2023
+  Medium: Screen Print And Mix Media With Mirror Card Paper
+  QRCode: {fileID: 21300000, guid: 67ad3fff7c0e1264c98044662daede62, type: 3}
   Interview: {fileID: 0}
 --- !u!65 &1981092471
 BoxCollider:
@@ -41328,11 +41677,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d79ab395264d7dd4ab9ff2eaf5026b58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: 
-  Artist: 
-  Dimensions: 
-  Year: 
-  Medium: 
+  Title: Jordan Macdonald & His 100 Bobbsicles Art Piece
+  Artist: (Emily) Ho Ying Chan
+  Dimensions: 42 X 59.4 cm
+  Year: 2022-2023
+  Medium: Screen Print And Mix Media With Mirror Card Paper
   QRCode: {fileID: 0}
   Interview: {fileID: 0}
 --- !u!65 &2145322328
