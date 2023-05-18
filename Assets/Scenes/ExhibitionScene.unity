@@ -645,7 +645,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 127
   m_IsActive: 1
 --- !u!154 &259842680
 TerrainCollider:
@@ -705,7 +705,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &264757255
 GameObject:
@@ -30601,6 +30601,84 @@ ReflectionProbe:
   m_UseOcclusionCulling: 1
   m_Importance: 1
   m_CustomBakedTexture: {fileID: 0}
+--- !u!1 &1418648345
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1418648348}
+  - component: {fileID: 1418648347}
+  - component: {fileID: 1418648346}
+  m_Layer: 0
+  m_Name: Terrain
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!154 &1418648346
+TerrainCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418648345}
+  m_Material: {fileID: 0}
+  m_Enabled: 1
+  m_TerrainData: {fileID: 15600000, guid: 22822b9dd9891104bb3b44c749ce66a1, type: 2}
+  m_EnableTreeColliders: 1
+--- !u!218 &1418648347
+Terrain:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418648345}
+  m_Enabled: 1
+  serializedVersion: 6
+  m_TerrainData: {fileID: 15600000, guid: 22822b9dd9891104bb3b44c749ce66a1, type: 2}
+  m_TreeDistance: 5000
+  m_TreeBillboardDistance: 50
+  m_TreeCrossFadeLength: 5
+  m_TreeMaximumFullLODCount: 50
+  m_DetailObjectDistance: 80
+  m_DetailObjectDensity: 1
+  m_HeightmapPixelError: 5
+  m_SplatMapDistance: 1000
+  m_HeightmapMaximumLOD: 0
+  m_ShadowCastingMode: 2
+  m_DrawHeightmap: 1
+  m_DrawInstanced: 0
+  m_DrawTreesAndFoliage: 1
+  m_StaticShadowCaster: 0
+  m_ReflectionProbeUsage: 1
+  m_MaterialTemplate: {fileID: 2100000, guid: 594ea882c5a793440b60ff72d896021e, type: 2}
+  m_BakeLightProbesForTrees: 1
+  m_PreserveTreePrototypeLayers: 0
+  m_DeringLightProbesForTrees: 1
+  m_ScaleInLightmap: 0.0256
+  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_GroupingID: 0
+  m_RenderingLayerMask: 1
+  m_AllowAutoConnect: 1
+--- !u!4 &1418648348
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418648345}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 35.83, y: 15.98, z: 34.23}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 26
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1449127222
 GameObject:
   m_ObjectHideFlags: 0
@@ -39754,7 +39832,7 @@ GameObject:
   - component: {fileID: 7774084237667517536}
   - component: {fileID: 8111771489919115396}
   - component: {fileID: 3701986992380614208}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: pPlatonic15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39879,7 +39957,7 @@ GameObject:
   - component: {fileID: 7497264543607608946}
   - component: {fileID: 5214051162824218004}
   - component: {fileID: 4367505149620409074}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: pPlatonic13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39962,7 +40040,7 @@ GameObject:
   - component: {fileID: 3291057573633647261}
   - component: {fileID: 2952667373821253124}
   - component: {fileID: 6581750011688533577}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: pPlatonic1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40019,7 +40097,7 @@ GameObject:
   - component: {fileID: 4385810396644051273}
   - component: {fileID: 4449600027311764525}
   - component: {fileID: 8735161865218294662}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: pPlatonic3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40258,7 +40336,7 @@ GameObject:
   - component: {fileID: 1482262194245103939}
   - component: {fileID: 676921911570857746}
   - component: {fileID: 7136840026169941835}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: pPlatonic11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40413,7 +40491,7 @@ GameObject:
   - component: {fileID: 5021740248034569852}
   - component: {fileID: 6516477930635522782}
   - component: {fileID: 4302186121219865470}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: pPlatonic5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40490,7 +40568,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6590337046044026256}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cave_v1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40508,7 +40586,7 @@ GameObject:
   - component: {fileID: 7313783468327277786}
   - component: {fileID: 83322297830094988}
   - component: {fileID: 1109065109292871306}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: pPlatonic7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40526,7 +40604,7 @@ GameObject:
   - component: {fileID: 8855111810814505669}
   - component: {fileID: 3524176884907212163}
   - component: {fileID: 3365201973745700165}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: pPlatonic12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40691,7 +40769,7 @@ GameObject:
   - component: {fileID: 4659418649180337392}
   - component: {fileID: 2754314434019423145}
   - component: {fileID: 1524041531682825223}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: pPlane1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40751,7 +40829,7 @@ GameObject:
   - component: {fileID: 9044699119828830003}
   - component: {fileID: 7133409486923255118}
   - component: {fileID: 7941884465186429755}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: pPlatonic9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40876,7 +40954,7 @@ GameObject:
   - component: {fileID: 3217080944175130213}
   - component: {fileID: 7732154569202281744}
   - component: {fileID: 8268146750452094934}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: pPlatonic10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40892,7 +40970,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5623538828821957902}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: group1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40918,7 +40996,7 @@ GameObject:
   - component: {fileID: 1775791311229708441}
   - component: {fileID: 1319997904205061413}
   - component: {fileID: 1791353247266758825}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: pPlatonic14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40978,7 +41056,7 @@ GameObject:
   - component: {fileID: 2508048287182553976}
   - component: {fileID: 5522044598702783178}
   - component: {fileID: 3234106940725500194}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: pPlatonic2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41151,7 +41229,7 @@ GameObject:
   - component: {fileID: 3642941947486186124}
   - component: {fileID: 2132205972009935668}
   - component: {fileID: 7785220090618746526}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: pPlatonic6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41184,7 +41262,7 @@ GameObject:
   - component: {fileID: 755857075673988993}
   - component: {fileID: 669630932928519592}
   - component: {fileID: 3675558414079661798}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: pPlatonic4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41202,7 +41280,7 @@ GameObject:
   - component: {fileID: 5426720341491068883}
   - component: {fileID: 1909681118281315808}
   - component: {fileID: 7691810160782045340}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: pPlatonic8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
