@@ -52,6 +52,11 @@ public class MovementScript : MonoBehaviour
         moveVector += Camera.main.transform.forward * move.y;
         moveVector += Camera.main.transform.right * move.x;
 
+        CanvasInfo.Instance.poem.SetActive(false);
+        CanvasInfo.Instance.intro.SetActive(false);
+        CanvasInfo.Instance.infoCanvas.SetActive(false);
+        ScreenPrintInfo.open = false;
+
         //moveVector.Normalize();
         moveVector *= speed;
     }

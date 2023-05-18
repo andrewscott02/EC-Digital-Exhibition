@@ -7,7 +7,7 @@ using TMPro;
 public class CanvasInfo : MonoBehaviour
 {
     public static CanvasInfo Instance;
-    public GameObject interactPopup, infoCanvas;
+    public GameObject interactPopup, infoCanvas, poem, intro;
 
     private void Start()
     {
