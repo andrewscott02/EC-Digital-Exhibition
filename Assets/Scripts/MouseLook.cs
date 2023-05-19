@@ -12,6 +12,8 @@ public class MouseLook : MonoBehaviour
     public float joystickSensitivity = 2f;
     public Transform playerBody;
 
+    public float interactDistance = 5f;
+
     float xRot = 0f;
 
     private void Awake()
@@ -51,7 +53,17 @@ public class MouseLook : MonoBehaviour
     // Update is called once per frame
     void Look(Vector2 direction)
     {
-        this.direction = direction;
+        this.direction = LerpV2(this.direction, direction, Time.deltaTime);
+    }
+
+    Vector2 LerpV2(Vector2 a, Vector2 b, float t)
+    {
+        Vector2 vector = new Vector2();
+
+        vector.x = Mathf.Lerp(a.x, b.x, t);
+        vector.y = Mathf.Lerp(a.y, b.y, t);
+
+        return vector;
     }
 
     private void FixedUpdate()
@@ -79,7 +91,7 @@ public class MouseLook : MonoBehaviour
 
         RaycastHit hit;
 
-        if (Physics.Raycast(transform.position, dir, out hit, 4f, layerMask))
+        if (Physics.Raycast(transform.position, dir, out hit, interactDistance, layerMask))
         {
             if (hit.collider == null)
             {
@@ -104,6 +116,6 @@ public class MouseLook : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;
-        Gizmos.DrawLine(transform.position, transform.position + (transform.forward * 4f));
+        Gizmos.DrawLine(transform.position, transform.position + (transform.forward * interactDistance));
     }
 }
