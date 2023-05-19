@@ -13,6 +13,8 @@ public class CanvasInfo : MonoBehaviour
     {
         Instance = this;
         interactPopup.SetActive(false);
+        poem.SetActive(false);
+        intro.SetActive(false);
         infoCanvas.SetActive(false);
     }
 
@@ -37,12 +39,7 @@ public class CanvasInfo : MonoBehaviour
 
     public void InteractPopup(bool open)
     {
-        interactPopup.SetActive(open && infoCanvas.activeSelf == false);
-    }
-
-    private void Update()
-    {
-        if (infoCanvas.activeSelf)
-            interactPopup.SetActive(false);
+        bool canvasActive = infoCanvas.activeSelf || poem.activeSelf || intro.activeSelf;
+        interactPopup.SetActive(open && canvasActive == false);
     }
 }

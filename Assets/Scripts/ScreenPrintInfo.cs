@@ -25,7 +25,7 @@ public class ScreenPrintInfo : MonoBehaviour
         {
             CanvasInfo.Instance.poem.SetActive(open);
         }
-        if (intro)
+        else if (intro)
         {
             CanvasInfo.Instance.intro.SetActive(open);
         }

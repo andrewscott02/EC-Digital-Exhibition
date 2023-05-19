@@ -12,6 +12,8 @@ public class MouseLook : MonoBehaviour
     public float joystickSensitivity = 2f;
     public Transform playerBody;
 
+    public float interactDistance = 5f;
+
     float xRot = 0f;
 
     private void Awake()
@@ -79,7 +81,7 @@ public class MouseLook : MonoBehaviour
 
         RaycastHit hit;
 
-        if (Physics.Raycast(transform.position, dir, out hit, 4f, layerMask))
+        if (Physics.Raycast(transform.position, dir, out hit, interactDistance, layerMask))
         {
             if (hit.collider == null)
             {
@@ -91,7 +93,7 @@ public class MouseLook : MonoBehaviour
             Debug.Log(info.name);
         }
 
-        CanvasInfo.Instance.interactPopup.SetActive(info != null);
+        CanvasInfo.Instance.InteractPopup(info != null);
     }
 
     void Interact()
@@ -104,6 +106,6 @@ public class MouseLook : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;
-        Gizmos.DrawLine(transform.position, transform.position + (transform.forward * 4f));
+        Gizmos.DrawLine(transform.position, transform.position + (transform.forward * interactDistance));
     }
 }
