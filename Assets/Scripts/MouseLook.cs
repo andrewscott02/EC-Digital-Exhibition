@@ -91,7 +91,7 @@ public class MouseLook : MonoBehaviour
             Debug.Log(info.name);
         }
 
-        CanvasInfo.Instance.interactPopup.SetActive(info != null);
+        CanvasInfo.Instance.InteractPopup(info != null);
     }
 
     void Interact()

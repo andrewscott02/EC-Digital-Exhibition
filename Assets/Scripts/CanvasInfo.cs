@@ -14,6 +14,8 @@ public class CanvasInfo : MonoBehaviour
         Instance = this;
         interactPopup.SetActive(false);
         infoCanvas.SetActive(false);
+        poem.SetActive(false);
+        intro.SetActive(false);
     }
 
     public TextMeshProUGUI title, artist, medium, date, dimensions;
@@ -37,12 +39,18 @@ public class CanvasInfo : MonoBehaviour
 
     public void InteractPopup(bool open)
     {
-        interactPopup.SetActive(open && infoCanvas.activeSelf == false);
+        bool canvasOpen = poem.activeSelf == true || intro.activeSelf == true || infoCanvas.activeSelf == true;
+
+        interactPopup.SetActive(open &! canvasOpen);
     }
 
     private void Update()
     {
         if (infoCanvas.activeSelf)
+            interactPopup.SetActive(false);
+        if (intro.activeSelf)
+            interactPopup.SetActive(false);
+        if (poem.activeSelf)
             interactPopup.SetActive(false);
     }
 }

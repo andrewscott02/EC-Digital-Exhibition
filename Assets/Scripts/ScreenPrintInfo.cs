@@ -24,10 +24,12 @@ public class ScreenPrintInfo : MonoBehaviour
         if (poem)
         {
             CanvasInfo.Instance.poem.SetActive(open);
+            CanvasInfo.Instance.InteractPopup(!open);
         }
-        if (intro)
+        else if (intro)
         {
             CanvasInfo.Instance.intro.SetActive(open);
+            CanvasInfo.Instance.InteractPopup(!open);
         }
         else
         {
