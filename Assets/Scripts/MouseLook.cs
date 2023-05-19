@@ -53,7 +53,17 @@ public class MouseLook : MonoBehaviour
     // Update is called once per frame
     void Look(Vector2 direction)
     {
-        this.direction = direction;
+        this.direction = LerpV2(this.direction, direction, Time.deltaTime);
+    }
+
+    Vector2 LerpV2(Vector2 a, Vector2 b, float t)
+    {
+        Vector2 vector = new Vector2();
+
+        vector.x = Mathf.Lerp(a.x, b.x, t);
+        vector.y = Mathf.Lerp(a.y, b.y, t);
+
+        return vector;
     }
 
     private void FixedUpdate()

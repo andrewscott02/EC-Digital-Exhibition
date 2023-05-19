@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class MovementScript : MonoBehaviour
 {
     InputManager controls;
-    InputAction move;
+    InputAction moveInput;
 
     CharacterController controller;
     public GameObject capsule;
@@ -24,8 +24,8 @@ public class MovementScript : MonoBehaviour
 
     private void OnEnable()
     {
-        move = controls.Player.Move;
-        move.Enable();
+        moveInput = controls.Player.Move;
+        moveInput.Enable();
 
         controls.Player.Move.performed += ctx => Move(ctx.ReadValue<Vector2>());
         controls.Player.Move.Enable();
@@ -48,21 +48,26 @@ public class MovementScript : MonoBehaviour
     void Move(Vector2 move)
     {
         Debug.Log("Moving");
-        moveVector = Vector3.zero;
-        moveVector += Camera.main.transform.forward * move.y;
-        moveVector += Camera.main.transform.right * move.x;
+        this.move = move;
 
         CanvasInfo.Instance.poem.SetActive(false);
         CanvasInfo.Instance.intro.SetActive(false);
         CanvasInfo.Instance.infoCanvas.SetActive(false);
         ScreenPrintInfo.open = false;
-
-        //moveVector.Normalize();
-        moveVector *= speed;
     }
+
+    Vector2 move;
 
     private void FixedUpdate()
     {
+        moveVector = Vector3.zero;
+        moveVector += Camera.main.transform.forward * move.y;
+        moveVector += Camera.main.transform.right * move.x;
+        ScreenPrintInfo.open = false;
+
+        //moveVector.Normalize();
+        moveVector *= speed;
+
         if (!controls.Player.Move.IsPressed())
             moveVector = Vector3.zero;
 
