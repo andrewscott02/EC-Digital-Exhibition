@@ -281,7 +281,7 @@ public partial class @InputManager : IInputActionCollection2, IDisposable
                     ""id"": ""374ccfc9-0b24-4769-b57c-57059f194b7c"",
                     ""path"": ""<Mouse>/delta"",
                     ""interactions"": """",
-                    ""processors"": ""Normalize(min=-1,max=1),NormalizeVector2"",
+                    ""processors"": ""Normalize(min=-1,max=1),NormalizeVector2,ScaleVector2(x=2,y=2)"",
                     ""groups"": ""Keyboard and Mouse"",
                     ""action"": ""Look"",
                     ""isComposite"": false,
