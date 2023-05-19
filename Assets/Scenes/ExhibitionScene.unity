@@ -5947,7 +5947,7 @@ MonoBehaviour:
   Dimensions: 42 X 59.4 cm
   Year: 2022-2023
   Medium: Screen Print And Mix Media With Mirror Card Paper
-  QRCode: {fileID: 0}
+  QRCode: {fileID: 21300000, guid: f0ce6fff3b863cd41ad7a0915cb452b3, type: 3}
   Interview: {fileID: 21300000, guid: f53df8b4dd429b447a341403d3410fa7, type: 3}
   poem: 0
   intro: 0
@@ -11191,7 +11191,7 @@ MonoBehaviour:
   Dimensions: 42 X 59.4 cm
   Year: 2022-2023
   Medium: Screen Print And Mix Media With Mirror Card Paper
-  QRCode: {fileID: 0}
+  QRCode: {fileID: 21300000, guid: 4e6f86b271bae8c4f94392fd064ab038, type: 3}
   Interview: {fileID: 21300000, guid: 0ef9d231e68c82240baea3b90aab30f7, type: 3}
   poem: 0
   intro: 0
@@ -11628,7 +11628,7 @@ MonoBehaviour:
   Dimensions: 42 X 59.4 cm
   Year: 2022-2023
   Medium: Screen Print And Mix Media With Mirror Card Paper
-  QRCode: {fileID: 0}
+  QRCode: {fileID: 21300000, guid: b4c29756754062449a37e1dc8bdbbaac, type: 3}
   Interview: {fileID: 21300000, guid: d774cf5c73099894b9c5b17a9eeed4b4, type: 3}
   poem: 0
   intro: 0
@@ -17429,7 +17429,7 @@ MonoBehaviour:
   Dimensions: 42 X 59.4 cm
   Year: 2022-2023
   Medium: Screen Print And Mix Media With Mirror Card Paper
-  QRCode: {fileID: 0}
+  QRCode: {fileID: 21300000, guid: 684cc1954f0f3d14f88e58fe033ddcf5, type: 3}
   Interview: {fileID: 21300000, guid: 26cade5017958694ab056d434fc9264c, type: 3}
   poem: 0
   intro: 0
@@ -18346,7 +18346,7 @@ MonoBehaviour:
   Dimensions: 42 X 59.4 cm
   Year: 2022-2023
   Medium: Screen Print And Mix Media With Mirror Card Paper
-  QRCode: {fileID: 0}
+  QRCode: {fileID: 21300000, guid: ff5a489b5b2249743ad15f75def91116, type: 3}
   Interview: {fileID: 21300000, guid: 22d67a4bfb3cc9f4594f600904ee4c88, type: 3}
   poem: 0
   intro: 0
@@ -18514,7 +18514,7 @@ MonoBehaviour:
   Dimensions: 42 X 59.4 cm
   Year: 2022-2023
   Medium: Screen Print And Mix Media With Mirror Card Paper
-  QRCode: {fileID: 0}
+  QRCode: {fileID: 21300000, guid: d493bab438711744f93cb2d6860f3a0d, type: 3}
   Interview: {fileID: 21300000, guid: 1da9213643208f84dac1d9b7c3562f52, type: 3}
   poem: 0
   intro: 0
@@ -42429,7 +42429,7 @@ MonoBehaviour:
   Dimensions: 42 X 59.4 cm
   Year: 2022-2023
   Medium: Screen Print And Mix Media With Mirror Card Paper
-  QRCode: {fileID: 0}
+  QRCode: {fileID: 21300000, guid: 6ff759c338de57d43bcbe2f48d91df6d, type: 3}
   Interview: {fileID: 21300000, guid: 3a59ce9fd132fc844a01d111bce03434, type: 3}
   poem: 0
   intro: 0
